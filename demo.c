@@ -25,7 +25,18 @@ int main(void)
     printf("c: %c\n", c);
 
     double y = 4.56;
-    printf("y: %f \n", y);
+    printf("y: %lf \n", y); // lf we use with scanf and it produces doubles, it has  more precision than floats (double the precision?)
+
+    float z = 7.5;
+    printf("z: %f \n"); // % we can use for both doubles and floats, for scanf lf is important
+
+    char str[] = "A string to output!\n";
+    printf("str: %s", str);
+
+    printf("|||%-10d|||\n", 54321);
+
+    printf("|||%10.2f|||\n", 4.231040);
+
 
     return 0;
 }
